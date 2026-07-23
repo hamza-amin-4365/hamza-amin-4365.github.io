@@ -2,7 +2,7 @@
 const decode = (encoded) => atob(encoded);
 const client = decode('NmI1MTU3YmYzMjQ1NDA3ZThhZDEyYjJjMjNiMWRkODI=');
 const secret = decode("NzA4MjJmYzdiMGU4NDZmNWJhZGM1YjI1YzFjMDUzOWQ=");
-const refresh = decode("QVFDV0JVWFJybFVVVWljNG11OEMtRWp0R2tvcmhQMmpQbjdKMDNSbGZQeC1ZVDRQaWY5bDltdXViZW90ZGMzLWtkUm81bUxMTWtZWTZMZVpkY2hTZlRjNkhZZl9WSUhEM2tVRWNpeEJGNmVSRVpkalJkMWJLRWhWbHhBUE1KcHlaREE=");
+const refresh = decode("QVFENmxQZTZBWGtTS1VLVEF1emxlQTk1R0FIQWgyY3ZnM2Jrb2pEamY2UjBpSVJfT19RaDJjX0UzOXYtS3hIOU5UUjNRRWhtaVVNTzh1WnFVLTlBZkxRdFh5dkpibmZnbUdIWmxRYVJfZzlYTGh1U2k1Zkc3MGJBZGVIeHNUZ0NOMm8=");
 
 const basic = btoa(`${client}:${secret}`);
 
@@ -77,6 +77,6 @@ const init = async () => {
 
 init();
 setInterval(() => {
+    document.getElementById("spotifyWrapper")?.remove();
     init();
-    document.getElementById("spotifyWrapper").remove();
 }, 3 * 60 * 1000);
