@@ -16,10 +16,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Hamza Amin</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 </head>
 
 <body>
-  <main class="mt-16 xl:w-1/3 lg:w-1/2 sm:w-full md:w-2/3 w-full">
+  <main class="mt-10 w-full max-w-[860px]">
     <header class="sm:flex xl:px-0 md:px-0 sm:px-0 lg:px-0 px-5">
       <div class="me rounded-full"></div>
       <div class="headingSubParent">
@@ -42,7 +45,7 @@
       </div>
     </header>
 
-    <nav class="py-7">
+    <nav class="py-4">
       <div
         class="flex flex-row flex-wrap justify-center xl:flex-nowrap lg:flex-nowrap md:flex-nowrap w-full xl:text-lg lg:text-lg sm:text-sm md:text-md text-[15px] xl:gap-3 sm:gap-5 md:gap-2 gap-2 xl:px-0 md:px-0 sm:px-0 lg:px-0 px-0 ">
         <p class="hover:underline ">
@@ -68,7 +71,8 @@
     <!-- <hr class="w-[110%] border-dashed border-[1px] border-[#1A1A1A] mx-6"> -->
     <img src="./assets/hr.svg" class="w-full" />
 
-    <div class="py-8 intro relative xl:px-0 md:px-0 sm:px-0 lg:px-0 px-5 ">
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center">
+    <div class="pt-10 pb-6 md:pt-6 intro relative w-full px-5 sm:px-0">
       <p class="xl:text-lg lg:text-lg sm:text-lg md:text-sm">
         i write code for a living and as a hobby. currently a product engineer at <a href="https://onground.io" target="_blank" class="underline">onground.io</a>, building production llm-agent systems. bs artificial intelligence from giki, class of 2026.
       </p>
@@ -84,10 +88,8 @@
       </svg>
     </div>
 
-    <img src="./assets/hr.svg" class="w-full" />
-
-    <div class="py-8 relative like xl:px-0 md:px-0 sm:px-0 lg:px-0 px-5 w-full">
-      <h2 class="xl:text-2xl lg:text-2xl md:text-xl sm:text-lg text-xl font-bold pb-3">i like</h2>
+    <div class="py-5 relative like w-full px-5 sm:px-0">
+      <h2 class="text-xl font-bold pb-2">i like</h2>
       <p class=" xl:text-lg lg:text-lg sm:text-lg md:text-sm">
         chess, open world games, listening to spotify, reading medium articles and being up to
         date with world politics and general knowledge
@@ -99,199 +101,161 @@
           stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" />
       </svg>
     </div>
+    </div>
 
     <img src="./assets/hr.svg" class="w-full" />
 
-    <div class="py-8 w-full flex flex-col xl:px-0 md:px-0 sm:px-0 lg:px-0 px-5">
-      <h2 class="font-bold text-2xl pb-5">work</h2>
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0 px-5 sm:px-0">
+      <section class="py-5">
+        <h2 class="font-bold text-xl pb-3">work</h2>
+        <div class="flex flex-col gap-3">
+          <div class="card work">
+            <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
+              <p class="cardTitle font-medium"><span class="mark">product engineer</span></p>
+              <p class="text-xs text-[#5B5B5B]">jun 2026 - present</p>
+            </div>
+            <p class="text-xs text-[#5B5B5B]"><a href="https://onground.io" target="_blank" class="underline">ground (onground.io)</a> - on-site</p>
+            <ul class="cardList">
+              <li>ai operating system for teams, shipping full-stack features for ~50 users incl. metal (yc)</li>
+              <li>mastra + vercel ai sdk agents that turn org memory into tasks, goals and briefs</li>
+            </ul>
+          </div>
+          <div class="card work">
+            <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
+              <p class="cardTitle font-medium"><span class="mark">software engineer intern</span></p>
+              <p class="text-xs text-[#5B5B5B]">jun - aug 2025</p>
+            </div>
+            <p class="text-xs text-[#5B5B5B]">dentalsetup.ai - remote (us)</p>
+            <ul class="cardList">
+              <li>scraping pipeline merging bbb, npi, zocdoc and carecredit; lead dataset scaled to ~500k records</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <div class="flex flex-col w-full gap-4">
-        <div class="border border-[#A7A7A7] w-full px-4 pb-5 rounded">
-          <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
-            <p class="projectHeading font-medium">product engineer</p>
-            <p class="text-sm text-[#5B5B5B]">jun 2026 - present</p>
+      <section class="py-5">
+        <h2 class="font-bold text-xl pb-3">education + awards</h2>
+        <div class="flex flex-col gap-3">
+          <div class="card work">
+            <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
+              <p class="cardTitle font-medium"><span class="mark">giki - bs artificial intelligence</span></p>
+              <p class="text-xs text-[#5B5B5B]">2022 - 2026</p>
+            </div>
+            <ul class="cardList">
+              <li>cgpa 3.10</li>
+              <li>executive member and director, acm giki</li>
+              <li>campus ambassador, devsinc (2025 - 2026)</li>
+            </ul>
           </div>
-          <p class="text-sm text-[#5B5B5B]"><a href="https://onground.io" target="_blank" class="underline">ground (onground.io)</a> - on-site</p>
-          <ul class="projectStack list-disc pl-5 flex flex-col gap-1">
-            <li>ai operating system for managing teams. ship full-stack features for ~50 users, incl. the metal (yc) team</li>
-            <li>build mastra + vercel ai sdk agent workflows that turn org memory into tasks, goals and briefs, with one-click manager approval</li>
-            <li>nestjs, postgresql, react 19</li>
-          </ul>
-        </div>
-        <div class="border border-[#A7A7A7] w-full px-4 pb-5 rounded">
-          <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
-            <p class="projectHeading font-medium">software engineer intern</p>
-            <p class="text-sm text-[#5B5B5B]">jun - aug 2025</p>
+          <div class="card work">
+            <p class="cardTitle font-medium"><span class="mark">awards + papers</span></p>
+            <ul class="cardList">
+              <li>sehatlink - national runner-up, national agentic ai hackathon 2025</li>
+              <li>rescue ai - 2nd place, giki open house</li>
+              <li>icet 2025: "Explainable AI for chest X-ray images using Grad-CAM"</li>
+              <li>icet 2025: "N-Queens Framework: brute-force search vs. genetic algorithms"</li>
+            </ul>
           </div>
-          <p class="text-sm text-[#5B5B5B]">dentalsetup.ai - remote (us)</p>
-          <ul class="projectStack list-disc pl-5 flex flex-col gap-1">
-            <li>built a scraping pipeline merging bbb, npi, zocdoc and carecredit data</li>
-            <li>scaled the lead dataset to ~500k records</li>
-          </ul>
         </div>
-        <div class="border border-[#A7A7A7] w-full px-4 pb-5 rounded">
-          <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
-            <p class="projectHeading font-medium">research assistant</p>
-            <p class="text-sm text-[#5B5B5B]">jul - aug 2025</p>
-          </div>
-          <p class="text-sm text-[#5B5B5B]">intelligent robotics lab, ncai - islamabad</p>
-          <ul class="projectStack list-disc pl-5 flex flex-col gap-1">
-            <li>pre-trained a small urdu language model on a self-curated corpus on an rtx 5090</li>
-          </ul>
-        </div>
-        <div class="border border-[#A7A7A7] w-full px-4 pb-5 rounded">
-          <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
-            <p class="projectHeading font-medium">data scientist</p>
-            <p class="text-sm text-[#5B5B5B]">jul - nov 2024 (data engineer, mar - jul 2024)</p>
-          </div>
-          <p class="text-sm text-[#5B5B5B]">saynt ai - karachi</p>
-          <ul class="projectStack list-disc pl-5 flex flex-col gap-1">
-            <li>built langchain/langgraph ai-tutor features, production agents and chatbots, plus ocr/image pipelines</li>
-          </ul>
-        </div>
+      </section>
+    </div>
+
+    <img src="./assets/hr.svg" class="w-full" />
+
+    <div class="py-5 w-full flex flex-col px-5 sm:px-0">
+      <h2 class="font-bold text-xl pb-3">projects</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4">
+        <a class="card proj" href="https://github.com/sehat-inc/sehat-link" target="_blank">
+          <p class="cardTitle font-medium"><span class="mark">Sehat Link</span></p>
+          <p class="projSub">national runner-up, Agentic AI Hackathon 2025 - LangGraph, FastAPI, MCP</p>
+          <span class="arrow" aria-hidden="true">&#8599;</span>
+        </a>
+        <a class="card proj" href="https://github.com/hamza-amin-4365/rescue-ai" target="_blank">
+          <p class="cardTitle font-medium"><span class="mark">Rescue AI</span></p>
+          <p class="projSub">GIKI Open House 2nd place - Urdu voice agent for emergency calls</p>
+          <span class="arrow" aria-hidden="true">&#8599;</span>
+        </a>
+        <a class="card proj" href="https://github.com/sehat-inc/haazri-hub" target="_blank">
+          <p class="cardTitle font-medium"><span class="mark">Haazri Hub</span></p>
+          <p class="projSub">Flutter - Django - YOLO</p>
+          <span class="arrow" aria-hidden="true">&#8599;</span>
+        </a>
+        <a class="card proj" href="https://onground.io" target="_blank">
+          <p class="cardTitle font-medium"><span class="mark">Ground</span></p>
+          <p class="projSub">NestJS, React 19, Mastra agents</p>
+          <span class="arrow" aria-hidden="true">&#8599;</span>
+        </a>
+        <a class="card proj" href="https://github.com/hamza-amin-4365/find_angels" target="_blank">
+          <p class="cardTitle font-medium"><span class="mark">find_angels</span></p>
+          <p class="projSub">AI app</p>
+          <span class="arrow" aria-hidden="true">&#8599;</span>
+        </a>
       </div>
     </div>
 
     <img src="./assets/hr.svg" class="w-full" />
 
-    <div class="py-8 w-full flex flex-col xl:px-0 md:px-0 sm:px-0 lg:px-0 px-5">
-      <h2 class="font-bold text-2xl pb-5">education + awards</h2>
+    <div class="py-5 w-full flex flex-col px-5 sm:px-0">
+      <h2 class="font-bold text-xl pb-3">skills</h2>
 
-      <div class="flex flex-col w-full gap-4">
-        <div class="border border-[#A7A7A7] w-full px-4 pb-5 rounded">
-          <div class="flex flex-row flex-wrap justify-between items-baseline gap-x-3">
-            <p class="projectHeading font-medium">giki - bs artificial intelligence</p>
-            <p class="text-sm text-[#5B5B5B]">2022 - 2026</p>
-          </div>
-          <ul class="projectStack list-disc pl-5 flex flex-col gap-1">
-            <li>cgpa 3.10</li>
-            <li>executive member and director, acm giki</li>
-            <li>campus ambassador, devsinc (2025 - 2026)</li>
-          </ul>
-        </div>
-
-        <div class="border border-[#A7A7A7] w-full px-4 pb-5 rounded">
-          <p class="projectHeading font-medium">awards + papers</p>
-          <ul class="projectStack list-disc pl-5 flex flex-col gap-1">
-            <li>sehatlink - national runner-up, national agentic ai hackathon 2025</li>
-            <li>rescue ai - 2nd place, giki open house</li>
-            <li>icet 2025: "Explainable AI for chest X-ray images using Grad-CAM"</li>
-            <li>icet 2025: "N-Queens Framework: brute-force search vs. genetic algorithms"</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <img src="./assets/hr.svg" class="w-full" />
-
-    <div class="py-8 w-full flex flex-col xl:px-0 md:px-0 sm:px-0 lg:px-0 px-5">
-      <h2 class="font-bold text-2xl  pb-5">projects</h2>
-
-      <div class="flex flex-wrap w-full gap-4 ">
-          <div
-          class="border border-[#A7A7A7] xl:w-[48%] lg:w-[48%] md:w-1/2 sm:w-1/2 w-full px-4 pb-8 rounded hover:rotate-[-2deg]">
-          <a href="https://github.com/sehat-inc/sehat-link" target="_blank">
-            <p class="projectHeading font-medium">Sehat Link</p>
-            <p class="projectStack">national runner-up, Agentic AI Hackathon 2025 - LangGraph, FastAPI, MCP</p>
-          </a>
-        </div>
-
-        <div
-          class="border border-[#A7A7A7] xl:w-[48%] lg:w-[48%] md:w-1/2 sm:w-1/2 w-full px-4 pb-8 rounded hover:rotate-[-2deg]">
-          <a href="https://github.com/hamza-amin-4365/rescue-ai" target="_blank">
-            <p class="projectHeading font-medium">Rescue AI</p>
-            <p class="projectStack">GIKI Open House 2nd place - Urdu voice agent for emergency calls</p>
-          </a>
-        </div>
-
-        <div
-          class="border border-[#A7A7A7] xl:w-[48%] lg:w-[48%] md:w-1/2 sm:w-1/2 w-full px-4 pb-8 rounded hover:rotate-[-2deg]">
-          <a href="https://github.com/sehat-inc/haazri-hub" target="_blank">
-            <p class="projectHeading font-medium">Haazri Hub</p>
-            <p class="projectStack">Flutter - Django - YOLO</p>
-          </a>
-        </div>
-
-        <div
-          class="border border-[#A7A7A7] xl:w-[48%] lg:w-[48%] md:w-1/2 sm:w-1/2 w-full px-4 pb-8 rounded hover:rotate-[-2deg]">
-          <a href="https://onground.io" target="_blank">
-            <p class="projectHeading font-medium">Ground</p>
-            <p class="projectStack">NestJS, React 19, Mastra agents</p>
-          </a>
-        </div>
-
-        <div
-          class="border border-[#A7A7A7] xl:w-[48%] lg:w-[48%] md:w-1/2 sm:w-1/2 w-full px-4 pb-8 rounded hover:rotate-[-2deg]">
-          <a href="https://github.com/hamza-amin-4365/find_angels" target="_blank">
-            <p class="projectHeading font-medium">find_angels</p>
-            <p class="projectStack">AI app</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <img src="./assets/hr.svg" class="w-full" />
-
-    <div class="py-8 w-full flex flex-col xl:px-0 md:px-0 sm:px-0 lg:px-0 px-5">
-      <h2 class="font-bold text-2xl pb-5">skills</h2>
-
-      <div class="flex flex-wrap w-full gap-2">
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Python</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">TypeScript</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">JavaScript</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">SQL</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">C++</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Bash</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">LangChain</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">LangGraph</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Mastra</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Vercel AI SDK</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">RAG</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Pinecone</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">pgvector</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Chroma</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">MCP / tool calling</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">evals</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">PyTorch</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">TensorFlow</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Hugging Face</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">NLP</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">OpenCV</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">YOLO</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Pandas</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">ETL</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Spark</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">NestJS</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">FastAPI</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Django</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Flask</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">REST</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">PostgreSQL</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Redis</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">data schema design</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">React 19</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Next.js</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Vite</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">TanStack Query</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Tailwind</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">shadcn/ui</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Docker</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">AWS</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">GCP</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Firebase</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Terraform</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">CI/CD</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Jenkins</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">GitHub Actions</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Git</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Linux</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">TCP/IP</span>
-        <span class="border border-[#A7A7A7] rounded-full px-3 py-1 text-sm">Android build config</span>
+      <div class="flex flex-wrap w-full gap-1.5">
+        <span class="chip">Python</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">SQL</span>
+        <span class="chip">C++</span>
+        <span class="chip">Bash</span>
+        <span class="chip">LangChain</span>
+        <span class="chip">LangGraph</span>
+        <span class="chip">Mastra</span>
+        <span class="chip">Vercel AI SDK</span>
+        <span class="chip">RAG</span>
+        <span class="chip">Pinecone</span>
+        <span class="chip">pgvector</span>
+        <span class="chip">Chroma</span>
+        <span class="chip">MCP / tool calling</span>
+        <span class="chip">evals</span>
+        <span class="chip">PyTorch</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">Hugging Face</span>
+        <span class="chip">NLP</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">YOLO</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">ETL</span>
+        <span class="chip">Spark</span>
+        <span class="chip">NestJS</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">Django</span>
+        <span class="chip">Flask</span>
+        <span class="chip">REST</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">Redis</span>
+        <span class="chip">data schema design</span>
+        <span class="chip">React 19</span>
+        <span class="chip">Next.js</span>
+        <span class="chip">Vite</span>
+        <span class="chip">TanStack Query</span>
+        <span class="chip">Tailwind</span>
+        <span class="chip">shadcn/ui</span>
+        <span class="chip">Docker</span>
+        <span class="chip">AWS</span>
+        <span class="chip">GCP</span>
+        <span class="chip">Firebase</span>
+        <span class="chip">Terraform</span>
+        <span class="chip">CI/CD</span>
+        <span class="chip">Jenkins</span>
+        <span class="chip">GitHub Actions</span>
+        <span class="chip">Git</span>
+        <span class="chip">Linux</span>
+        <span class="chip">TCP/IP</span>
+        <span class="chip">Android build config</span>
       </div>
     </div>
 
     <a href="./assets/hamza_resume.pdf" download="hamza_resume.pdf"
-      class="w-full md:mb-10 mb-28 xl:px-0 md:px-0 sm:px-0  lg:px-0 px-5">
+      class="w-full md:mb-10 mb-20 px-5 sm:px-0 mt-2">
       <div class="w-full flex flex-row gap-2">
         <img src="./assets/file.svg" class="" />
         <p class="text-lg underline cursor-pointer">my resume</p>
